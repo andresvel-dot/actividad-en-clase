@@ -42,25 +42,27 @@ public class ActividadEnClase {
                 break;
 
             case 4:
-                System.out.println("Terminar encuestas");
+                System.out.println("Se Terminaron las encuestas");
                 break;
         
             default:
-                System.out.println("Se cierran las encuestas");
+                System.out.println("Opcion invalida");
                 break;
         }
        } while (opcion!=4) ;
 
          if (opcion==4 && totalExcelente >= PORCENTAJE) {
 
-               TerminarEncuestas= (  totalExcelente * PORCENTAJE);
+               TerminarEncuestas= totalExcelente * PORCENTAJE;
                System.out.println("Meta de satisfaccion alcanzada: " + TerminarEncuestas);
-         
-            } else  {
                 System.out.println("los votos totales de excelentes son: " + totalExcelente);
                 System.out.println("los votos totales regulares fueron: " + totalRegular);
                 System.out.println("los votos totales malos fueron: " + TotalMalo);
-                 System.out.println("FINALIZAN LAS ENCUESTAS");
+                   System.out.println("FINALIZAN LAS ENCUESTAS");
+         
+            } else  {
+            
+                 System.out.println("No se registro ningun voto");
               } 
              
             
